@@ -1,0 +1,22 @@
+Training in a Baksetball Camp
+
+Consider the following RDB schema of a basketball development league:
+Players (pid, name, height, age, university, ARP(Average Rating Points))
+Camps (cid, name, credit)
+Take (pid, cid, season, year, rating)
+The ratings will be letters, e.g. A+, A, ...
+RatingPoints (rating, points)
+This table maps a letter rating to a point in the scale of 0-10. For example, (A-, 8.7) is a tuple in it.
+RequiredCamps (university, cid)
+This table records the required camps a player must take before being drafted by NBA / WNBA.
+Squad (qid, cid, season, practice, rating)
+InSquad (qid, pid)
+Write queries in SQL as required and note that you will be graded based on whether your queries are
+correct and simple.
+1. Find the players who come from the same university, and have taken the same camp and are in the
+same squad with a player named ‘Karl-Anthony Towns Jr.’. Return the name, height, and ARP of
+these players.
+2. Find the players who have never taken any camps that are not required by his/her university.
+3. A player can head for the draft from his/her university if he/she has taken camps of a total number
+of 90 credits or more, with an ARP > 5.0, and has taken all required camps. Please find the pid and
+name of the players who can go to the draft.

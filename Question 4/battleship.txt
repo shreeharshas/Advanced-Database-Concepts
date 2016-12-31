@@ -1,0 +1,10 @@
+Write the following as tuple-based CHECK constraints about our "battleship" schema:
+Classes(class, type, country, numGuns, bore, displacement)
+Ships(name, class, launched)
+Battle(name, date)
+Outcomes(ship, battle, result)
+Ships.class is the foreign key that references Classes.class.
+Outcomes.ship is the foreign key that references Ships.name.
+Outcomes.battle is the foreign key that references Battle.name.
+1. If a class of ships has more than 9 guns, then their bore must be no longer than 14 inches.
+2. No ship can be in battle before it is launched.

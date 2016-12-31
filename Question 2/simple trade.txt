@@ -1,0 +1,9 @@
+Simple Trade
+
+Given the table Trade (commodity, price, quantity)
+1. Transform the following query using only ”SELECT”, ”FROM”, and ”WHERE”.
+SELECT commodity, sum(quantity) AS TotalSales
+FROM Trade
+WHERE price > 100000
+GROUP BY commodity
+HAVING sum(quantity) > 30000

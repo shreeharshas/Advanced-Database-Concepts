@@ -1,0 +1,12 @@
+Consider the Basketball Training Camp Schema again:
+Players (pid, pname, height, age, university, ARP(Average Rating Points))
+Camps (cid, cname, credit)
+Take (pid, cid, season, year, rating)
+The ratings will be numbers, e.g. 92, 78, ...
+RequiredCamps (university, cid)
+This table records the required camps a player must take before being drafted by NBA / WNBA.
+Squad (qid, cid, season, practice, rating)
+InSquad (qid, pid)
+1. Write a SQL query to find the players who have the highest rating in the "Shooting" camp of
+Fall(Season) 2015(Year).
+2. Write the same query above using a view.
